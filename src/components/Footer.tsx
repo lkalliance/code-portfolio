@@ -1,8 +1,8 @@
 function Footer() {
     return (
-        <div>
-            This is the footer text
-        </div>
+        <footer>
+            You never finish coding. You just run out of time.
+        </footer>
     )
 }
 
