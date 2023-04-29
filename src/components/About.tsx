@@ -3,14 +3,15 @@ interface aboutProps {
   paragraphs: string[];
 }
 
-function About( { paragraphs, title }: aboutProps ) {
-  
+function About({ paragraphs, title }: aboutProps) {
   return (
     <section>
       <h3>{title}</h3>
-      { paragraphs.map((graph) => <p>{graph}</p>)} 
+      {paragraphs.map((graph, index) => (
+        <p key={index}>{graph}</p>
+      ))}
     </section>
-  )
+  );
 }
 
 export { About };
