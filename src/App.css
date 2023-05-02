@@ -1,42 +1,83 @@
-.hidden {
-  display: none;
+:root {
+  --primary: rgb(37, 54, 136);
+  --secondary: rgb(38, 214, 200);
+  --primary-light-bg: rgb(194, 214, 249);
+  --link: rgb(151, 130, 11);
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+body {
+  flex-grow: 1;
+  position: relative;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+#portfolio {
+  display: flex;
+  direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#portfolio .techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 6px;
+}
+
+#portfolio a.git {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 600;
+}
+
+#portfolio .MuiPaper-root {
+  margin: 0 10px 20px;
+  background-color: var(--primary-light-bg);
+}
+
+#portfolio .MuiCardHeader-root {
+  background-color: var(--primary);
   color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#portfolio .MuiCardContent-root {
+  padding: 6px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#portfolio .MuiCardContent-root span {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+#portfolio .MuiButtonBase-root {
+  padding-top: 0;
+}
+
+footer {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--secondary);
+  letter-spacing: 0.2rem;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 500;
 }
