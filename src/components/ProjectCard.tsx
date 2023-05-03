@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardMedia,
   CardContent,
-  CardActions,
   CardActionArea,
   Collapse,
   IconButton,
@@ -71,7 +70,7 @@ function ProjectCard({
           {shortDescription}
           <br />
           <a href={repo} rel="noreferrer" target="_blank" className="git">
-            {" > "}GitHub
+            view code on GitHub
           </a>
         </Typography>
       </CardContent>

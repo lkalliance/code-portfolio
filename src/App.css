@@ -67,6 +67,11 @@ body {
   padding-top: 0;
 }
 
+button.MuiButtonBase-root {
+  font-size: 0.8em;
+  padding: 8px 0;
+}
+
 footer {
   box-sizing: border-box;
   position: absolute;

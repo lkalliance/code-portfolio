@@ -1,4 +1,3 @@
-import { Alert } from "./Alert";
 import { useState } from "react";
 import { validateEmail } from "../utils";
 import { TextField, Box, Button } from "@mui/material";
@@ -34,7 +33,10 @@ function Contact() {
   const handleFormSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
     const alertText =
-      emailAlert || messageAlert || nameAlert
+      emailAlert ||
+      email.length === 0 ||
+      name.length === 0 ||
+      message.length === 0
         ? "One or more fields is incorrectly filled out"
         : `${name} at email ${email} said, "${message}"`;
     alert(alertText);
@@ -88,42 +90,18 @@ function Contact() {
           />
           <Button
             variant="contained"
-            disabled={emailAlert || messageAlert || nameAlert}
+            disabled={
+              emailAlert ||
+              email.length === 0 ||
+              name.length === 0 ||
+              message.length === 0
+            }
             onClick={handleFormSubmit}
           >
             Send
           </Button>
         </div>
       </Box>
-
-      {/* <form>
-        <label htmlFor="Name">Name</label>
-        <input
-          type="text"
-          id="name"
-          // onChange={(e) => handleInput(e, setNameAlert)}
-        />
-        <Alert current={nameAlert} message="Please provide a name" />
-        <label htmlFor="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          onChange={(e) => handleInput(e, setEmailAlert)}
-        />
-        <Alert
-          current={emailAlert}
-          message="Please provide a valid email address"
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          onChange={(e) => handleText(e, setMessageAlert)}
-        ></textarea>
-        <Alert current={messageAlert} message="Please provide a message" />
-        <button type="submit" onClick={handleFormSubmit}>
-          Send
-        </button>
-      </form> */}
     </section>
   );
 }

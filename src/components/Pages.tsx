@@ -18,7 +18,7 @@ function Pages() {
           aria-label="Portfolio navigation"
           onChange={handleChange}
           value={page}
-          centered
+          variant="fullWidth"
         >
           <Tab label="About Me" value="1" />
           <Tab label="Portfolio" value="2" />
