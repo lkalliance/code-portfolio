@@ -38,7 +38,7 @@ function App() {
                 aria-label="Portfolio navigation"
                 onChange={handleChange}
                 value={page}
-                centered={isSmall ? false : true}
+                centered
               >
                 <Tab
                   label="Portfolio"
