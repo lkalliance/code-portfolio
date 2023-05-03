@@ -2,7 +2,7 @@ import { Header } from "./Header";
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { Portfolio } from "./Portfolio";
-import { Resume } from "./Resume";
+import { Materials } from "./Materials";
 import { Footer } from "./Footer";
 import { ProjectCard } from "./ProjectCard";
 import { Pages } from "./Pages";
@@ -13,7 +13,7 @@ export {
   About,
   Contact,
   Portfolio,
-  Resume,
+  Materials,
   Footer,
   ProjectCard,
   Pages,

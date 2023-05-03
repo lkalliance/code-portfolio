@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Tabs, Tab } from "@mui/material";
 import { TabPanel, TabContext } from "@mui/lab";
-import { About, Contact, Portfolio, Resume } from "../components";
+import { About, Contact, Portfolio, Materials } from "../components";
 import aboutMe from "../data/about.json";
 
 function Pages() {
@@ -33,7 +33,7 @@ function Pages() {
         <Portfolio />
       </TabPanel>
       <TabPanel value="3">
-        <Resume />
+        <Materials />
       </TabPanel>
       <TabPanel value="4">
         <Contact />

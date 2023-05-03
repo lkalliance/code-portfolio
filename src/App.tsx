@@ -8,16 +8,20 @@ import {
   About,
   Contact,
   Portfolio,
-  Resume,
+  Materials,
 } from "./components";
 import { getPage } from "./utils";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import aboutMe from "./data/about.json";
 
 function App() {
   const pageNum = getPage(window.location.href);
   const [page, setPage] = useState(pageNum);
   const { paragraphs } = aboutMe;
+  const isSmall = useMediaQuery({ query: "(max-width: 480px)" });
+
+  console.log(isSmall);
 
   const handleChange = (e: React.SyntheticEvent, newPage: string) => {
     setPage(newPage);
@@ -25,56 +29,56 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Header title="Lee Klusky Coding Portfolio" />
-        <TabContext value={page}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <Tabs
-              aria-label="Portfolio navigation"
-              onChange={handleChange}
-              value={page}
-              variant="fullWidth"
-            >
-              <Tab
-                label="About Me"
-                component={Link}
-                to="/about"
-                value="about"
-              />
-              <Tab
-                label="Portfolio"
-                component={Link}
-                to="/portfolio"
-                value="portfolio"
-              />
-              <Tab
-                label="Résumé"
-                component={Link}
-                to="/resume"
-                value="resume"
-              />
-              <Tab
-                label="Contact Me"
-                component={Link}
-                to="/contact"
-                value="contact"
-              />
-            </Tabs>
-          </Box>
-        </TabContext>
+      <div className={isSmall ? "App small" : "App big"}>
+        <header>
+          <Header title="Lee Klusky Coding Portfolio" />
+          <TabContext value={page}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                aria-label="Portfolio navigation"
+                onChange={handleChange}
+                value={page}
+                centered={isSmall ? false : true}
+              >
+                <Tab
+                  label="Portfolio"
+                  component={Link}
+                  to="/portfolio"
+                  value="portfolio"
+                />
+                <Tab
+                  label={isSmall ? "About" : "About Me"}
+                  component={Link}
+                  to="/about"
+                  value="about"
+                />
+                <Tab
+                  label="Materials"
+                  component={Link}
+                  to="/materials"
+                  value="materials"
+                />
+                <Tab
+                  label={isSmall ? "Contact" : "Contact Me"}
+                  component={Link}
+                  to="/contact"
+                  value="contact"
+                />
+              </Tabs>
+            </Box>
+          </TabContext>
+        </header>
         <Footer />
         <Routes>
-          <Route
-            path="/"
-            element={<About paragraphs={paragraphs} title="About Me" />}
-          />
+          <Route path="/" element={<Portfolio />} />
           <Route
             path="/about"
             element={<About paragraphs={paragraphs} title="About Me" />}
           />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/materials" element={<Materials />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Portfolio />} />
         </Routes>
       </div>
     </Router>

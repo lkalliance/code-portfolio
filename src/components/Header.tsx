@@ -3,11 +3,7 @@ interface HeaderProps {
 }
 
 function Header({ title }: HeaderProps) {
-  return (
-    <div>
-      <h1>{title}</h1>
-    </div>
-  );
+  return <h1>{title}</h1>;
 }
 
 export { Header };

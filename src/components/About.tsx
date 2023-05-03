@@ -6,6 +6,11 @@ interface aboutProps {
 function About({ paragraphs, title }: aboutProps) {
   return (
     <section>
+      <img
+        src="/images/lee_head_shot.png"
+        className="headshot"
+        alt="Lee Klusky"
+      />
       {paragraphs.map((graph, index) => (
         <p key={index}>{graph}</p>
       ))}
