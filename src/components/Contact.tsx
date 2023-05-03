@@ -69,6 +69,7 @@ function Contact() {
             variant="outlined"
             id="email"
             label="Email"
+            type="email"
             helperText={emailAlert ? "A valid email is required" : " "}
             onChange={handleInput}
             onBlur={() => {
