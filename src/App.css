@@ -1,8 +1,8 @@
 :root {
   --primary: rgb(37, 54, 136);
   --secondary: rgb(38, 214, 200);
-  --primary-light-bg: rgb(194, 214, 249);
-  --link: rgb(151, 130, 11);
+  --primary-light-bg: rgb(78, 112, 171);
+  --link: rgb(237, 206, 27);
 }
 
 html {
@@ -19,11 +19,37 @@ body {
 }
 
 h1 {
-  background-color: var(--primary);
   color: white;
   margin: 0;
-  text-align: center;
   padding: 20px;
+}
+
+header {
+  background-color: var(--primary);
+}
+
+.small h1 {
+  font-size: 1.25em;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.big h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  padding-left: 20px;
+}
+
+.links a {
+  font-size: 0.8em;
+  padding: 6px 10px 20px 0;
+  text-decoration: none;
+  color: white;
 }
 
 section {
@@ -65,6 +91,7 @@ section#contact {
 #portfolio .MuiPaper-root {
   margin: 0 auto 20px;
   background-color: var(--primary-light-bg);
+  color: white;
   max-width: 320px;
 }
 
@@ -78,6 +105,9 @@ section#contact {
   padding: 6px 10px 10px;
 }
 
+#portfolio .MuiCardContent-root p {
+  color: white;
+}
 #portfolio .MuiCardContent-root span {
   color: var(--primary);
   font-weight: 700;
@@ -89,21 +119,38 @@ section#contact {
   padding-top: 0;
 }
 
+#portfolio .MuiButtonBase-root svg {
+  color: white;
+}
+
 #contact .MuiFormControl-root {
   padding: 0;
   width: 100%;
   margin: 5px 0;
 }
 
-a.MuiButtonBase-root {
-  font-size: 1em;
-  padding: 0;
+#materials {
+  text-align: center;
+}
+
+#materials a {
+  width: 250px;
+  display: block;
+  margin: 10px auto;
+}
+
+.MuiBox-root a.MuiButtonBase-root {
   color: white;
+}
+
+.App.small .MuiBox-root a.MuiButtonBase-root {
+  padding: 0;
+  font-size: 0.7em;
+  width: 60px;
 }
 
 a.MuiButtonBase-root.Mui-selected {
   color: var(--secondary);
-  font-weight: 700;
 }
 
 img.headshot {
