@@ -5,9 +5,10 @@ function validateEmail(email: string) {
 }
 
 function getPage(loc: string) {
+  const pages = ["", "about", "portfolio", "resume", "contact"];
   const location = loc.split("/");
-  const page = location[location.length - 1];
-  return page === "" ? "about" : page;
+  let page = location[location.length - 1];
+  return pages.indexOf(page) > 0 ? page : "about";
 }
 
 export { validateEmail, getPage };
