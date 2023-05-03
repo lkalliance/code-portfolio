@@ -15,7 +15,29 @@ body {
   flex-grow: 1;
   position: relative;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  background-color: var(--primary);
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 700px;
+}
+
+section#contact {
+  max-width: 500px;
+}
+
+.MuiTabs-root {
+  background-color: var(--primary);
 }
 
 #portfolio {
@@ -24,7 +46,6 @@ body {
   justify-content: center;
   align-items: start;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 #portfolio .techs {
@@ -42,8 +63,9 @@ body {
 }
 
 #portfolio .MuiPaper-root {
-  margin: 0 10px 20px;
+  margin: 0 auto 20px;
   background-color: var(--primary-light-bg);
+  max-width: 320px;
 }
 
 #portfolio .MuiCardHeader-root {
@@ -67,9 +89,29 @@ body {
   padding-top: 0;
 }
 
-button.MuiButtonBase-root {
-  font-size: 0.8em;
-  padding: 8px 0;
+#contact .MuiFormControl-root {
+  padding: 0;
+  width: 100%;
+  margin: 5px 0;
+}
+
+a.MuiButtonBase-root {
+  font-size: 1em;
+  padding: 0;
+  color: white;
+}
+
+a.MuiButtonBase-root.Mui-selected {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+img.headshot {
+  width: 100px;
+  float: left;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
 }
 
 footer {

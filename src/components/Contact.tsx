@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section id="contact">
       <Box
         component="form"
         sx={{
@@ -58,7 +58,7 @@ function Contact() {
             variant="outlined"
             id="name"
             label="Name"
-            helperText={nameAlert ? "Name is required" : ""}
+            helperText={nameAlert ? "Name is required" : " "}
             onChange={handleInput}
             onBlur={() => {
               toggleAlert("name", name, setNameAlert);
@@ -69,7 +69,7 @@ function Contact() {
             variant="outlined"
             id="email"
             label="Email"
-            helperText={emailAlert ? "A valid email is required" : ""}
+            helperText={emailAlert ? "A valid email is required" : " "}
             onChange={handleInput}
             onBlur={() => {
               toggleAlert("email", email, setEmailAlert);
@@ -82,7 +82,7 @@ function Contact() {
             label="Message"
             multiline
             rows={6}
-            helperText={messageAlert ? "A message is required" : ""}
+            helperText={messageAlert ? "A message is required" : " "}
             onChange={handleInput}
             onBlur={() => {
               toggleAlert("message", message, setMessageAlert);
