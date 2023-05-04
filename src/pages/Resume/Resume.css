@@ -2,6 +2,7 @@
   font-size: 0.9em;
   color: #666666;
   max-width: 600px;
+  position: relative;
 }
 
 #resume h2,
@@ -28,7 +29,15 @@
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
-  padding: 30px 20px 30px 0;
+  padding-right: 20px;
+}
+
+#resume a.MuiButtonBase-root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 16px;
+  color: white;
 }
 
 #resume p {

@@ -1,6 +1,6 @@
 import "./Resume.css";
 import { useEffect } from "react";
-import { Box, Link, List, ListItem, Typography } from "@mui/material";
+import { Box, Button, Link, List, ListItem, Typography } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkIcon from "@mui/icons-material/Link";
@@ -15,6 +15,14 @@ function Resume() {
   return (
     <section id="resume">
       <Box className="heading">
+        <Button
+          variant="contained"
+          color="primary"
+          href="./lee-klusky-resume.pdf"
+          target="_blank"
+        >
+          Download PDF
+        </Button>
         <Typography component="h2">Lee Klusky</Typography>
         <Typography component="p" className="heading">
           Twin Cities, Minnesota, USA
