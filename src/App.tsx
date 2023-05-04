@@ -45,12 +45,6 @@ function App() {
                   value="about"
                 />
                 <Tab
-                  label="Materials"
-                  component={Link}
-                  to="/materials"
-                  value="materials"
-                />
-                <Tab
                   label={isSmall ? "Contact" : "Contact Me"}
                   component={Link}
                   to="/contact"

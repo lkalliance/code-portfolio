@@ -86,3 +86,13 @@ footer {
   line-height: 1.2em;
   font-weight: 500;
 }
+
+footer a.MuiTypography-root {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer a.MuiTypography-root:hover {
+  color: var(--secondary);
+}
