@@ -4,13 +4,10 @@ function Footer() {
   return (
     <footer>
       <Stack
-        direction={{ xs: "column", sm: "row" }}
+        direction="row"
         spacing={{ xs: 1, sm: 2, md: 4 }}
         sx={{ justifyContent: "center", marginBottom: "12px" }}
       >
-        <Link href="./images/lee-klusky-resume.pdf" target="_blank">
-          Résumé
-        </Link>
         <Link href="https://github.com/lkalliance" target="_blank">
           GitHub
         </Link>
