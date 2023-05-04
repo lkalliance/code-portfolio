@@ -56,7 +56,7 @@ function ProjectCard({
   };
 
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 300 }} raised={true}>
       <CardActionArea component="a" href={url} target="_blank">
         <CardHeader title={title} />
         <CardMedia

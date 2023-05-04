@@ -18,6 +18,8 @@ function About({ paragraphs, small }: aboutProps) {
         src="./images/lee_head_shot.png"
         className="headshot"
         alt="Lee Klusky"
+        width={small ? "65px" : "100px"}
+        height={small ? "65px" : "100px"}
       />
       <Box>
         {paragraphs.map((graph, index) => (
