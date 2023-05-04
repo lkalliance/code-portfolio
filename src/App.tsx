@@ -65,7 +65,7 @@ function App() {
           <Route path="/" element={<Portfolio />} />
           <Route
             path="/about"
-            element={<About paragraphs={paragraphs} title="About Me" />}
+            element={<About paragraphs={paragraphs} small={isSmall} />}
           />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/materials" element={<Materials />} />

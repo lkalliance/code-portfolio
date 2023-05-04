@@ -3,11 +3,11 @@ import { useEffect } from "react";
 import { Box } from "@mui/material";
 
 interface aboutProps {
-  title: string;
+  small: boolean;
   paragraphs: string[];
 }
 
-function About({ paragraphs, title }: aboutProps) {
+function About({ paragraphs, small }: aboutProps) {
   useEffect(() => {
     document.title = "Lee Klusky: About Me";
   });
@@ -21,7 +21,14 @@ function About({ paragraphs, title }: aboutProps) {
       />
       <Box>
         {paragraphs.map((graph, index) => (
-          <Box key={index} sx={{ marginBottom: "20px", lineHeight: "1.6em" }}>
+          <Box
+            key={index}
+            sx={
+              small
+                ? { marginBottom: "20px", lineHeight: "1.2em" }
+                : { marginBottom: "20px", lineHeight: "1.6em" }
+            }
+          >
             {graph}
           </Box>
         ))}
