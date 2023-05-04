@@ -1,13 +1,18 @@
+import { useEffect } from "react";
 import Button from "@mui/material/Button";
 
 function Materials() {
+  useEffect(() => {
+    document.title = "Lee Klusky: Career Materials";
+  });
+
   return (
     <section id="materials">
       <h3>Professional Materials:</h3>
 
       <Button
         variant="contained"
-        href="/images/lee-klusky-resume.pdf"
+        href="./images/lee-klusky-resume.pdf"
         rel="noreferrer"
         target="_blank"
       >

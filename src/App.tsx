@@ -11,7 +11,7 @@ import {
   Materials,
 } from "./components";
 import { getPage } from "./utils";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import aboutMe from "./data/about.json";
 
@@ -20,8 +20,6 @@ function App() {
   const [page, setPage] = useState(pageNum);
   const { paragraphs } = aboutMe;
   const isSmall = useMediaQuery({ query: "(max-width: 480px)" });
-
-  console.log(isSmall);
 
   const handleChange = (e: React.SyntheticEvent, newPage: string) => {
     setPage(newPage);
