@@ -12,15 +12,17 @@ function About({ paragraphs, title }: aboutProps) {
   });
 
   return (
-    <section>
+    <section id="about">
       <img
         src="./images/lee_head_shot.png"
         className="headshot"
         alt="Lee Klusky"
       />
-      {paragraphs.map((graph, index) => (
-        <p key={index}>{graph}</p>
-      ))}
+      <div>
+        {paragraphs.map((graph, index) => (
+          <p key={index}>{graph}</p>
+        ))}
+      </div>
     </section>
   );
 }

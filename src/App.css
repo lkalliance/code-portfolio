@@ -1,6 +1,7 @@
 :root {
   --primary: rgb(37, 54, 136);
   --secondary: rgb(38, 214, 200);
+  --secondary-highlight: rgb(29, 183, 170);
   --primary-light-bg: rgb(78, 112, 171);
   --link: rgb(237, 206, 27);
 }
@@ -28,6 +29,7 @@ h1 {
 header {
   background-color: var(--primary);
 }
+
 .small h1 {
   font-size: 1.25em;
   padding-bottom: 0;
@@ -45,11 +47,11 @@ section {
 }
 
 .MuiTabs-root {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .MuiBox-root a.MuiButtonBase-root {
-  color: white;
+  color: var(--primary);
 }
 
 .App.small .MuiBox-root a.MuiButtonBase-root {
@@ -59,7 +61,8 @@ section {
 }
 
 a.MuiButtonBase-root.Mui-selected {
-  color: var(--secondary);
+  background-color: var(--secondary-highlight);
+  color: black;
 }
 
 footer {
