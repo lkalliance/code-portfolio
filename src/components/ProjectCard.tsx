@@ -10,6 +10,7 @@ import {
   Collapse,
   IconButton,
   Typography,
+  Link,
 } from "@mui/material/";
 import { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -69,9 +70,9 @@ function ProjectCard({
         <Typography variant="body2" color="text.secondary">
           {shortDescription}
           <br />
-          <a href={repo} rel="noreferrer" target="_blank" className="git">
+          <Link href={repo} rel="noreferrer" target="_blank" className="git">
             view code on GitHub
-          </a>
+          </Link>
         </Typography>
       </CardContent>
       <ExpandMore

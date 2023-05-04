@@ -11,7 +11,3 @@ img.headshot {
   border: 3px solid var(--primary);
   margin: 0 20px 10px 0;
 }
-
-section#about p {
-  margin-top: 0;
-}

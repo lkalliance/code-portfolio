@@ -21,7 +21,9 @@ function About({ paragraphs, title }: aboutProps) {
       />
       <Box>
         {paragraphs.map((graph, index) => (
-          <p key={index}>{graph}</p>
+          <Box key={index} sx={{ marginBottom: "20px", lineHeight: "1.6em" }}>
+            {graph}
+          </Box>
         ))}
       </Box>
     </section>

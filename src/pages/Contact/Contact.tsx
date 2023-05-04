@@ -57,7 +57,7 @@ function Contact() {
         noValidate
         autoComplete="off"
       >
-        <div>
+        <Box>
           <TextField
             error={nameAlert}
             variant="outlined"
@@ -106,7 +106,7 @@ function Contact() {
           >
             Send
           </Button>
-        </div>
+        </Box>
       </Box>
     </section>
   );
