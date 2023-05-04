@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Lee Klusky Code Portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a useful web page for potential employers to see me and to get a feel for my skills and my personality. I wanted to provide some text in my own words, some samples of my work, and all the information and links they'll need to reach out to me. I hope this page will inspire them to do that.
 
-In the project directory, you can run:
+The preceding paragraph is from the README on my [original code portfolio](https://lkalliance.github.io/module-2-challenge/), published mere months ago. The sentiment is still valid, but my technological tools have certainly gotten more advanced.
 
-### `npm start`
+There is actually yet another version of this portfolio, using still different technologies, [here](https://lee-k-coding-portfolio.herokuapp.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Installation Instructions](#installation-instructions)
+- [Usage Information](#usage-information)
+- [Credits](#credits)
+- [Software License](#software-license)
+- [Contact the Developer](#contact-the-developer)
 
-### `npm test`
+## Installation Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There is no installation required: this application is hosted on the Web. The user will need a web browser, and will need to have Javascript turned on.
 
-### `npm run build`
+## Usage Information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./public/images/coding-portfolio-screenshot.png" width="300" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The user can navigate the portfolio using the main navigation links just below the headline. On the "Portfolio" tab, each coding sample is clickable to go to the hosted application. The user can also click the "view code on GitHub" as well, or can use the disclosure link at the bottom to reveal more information on the given application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The user can browse my career materials on the "Materials" tab: buttons on that panel will lead the user to a resume, and my GitHub and LinkedIn profiles.
 
-### `npm run eject`
+Finally, the user can reach out to me on the "Contact Me" form. All fields are required, and the email address needs to take a proper form.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Credits
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Though I coded this application, it would not have been possible without the help and guidance of instructors and classmates of the [University of Minnesota Full Stack Coding Bootcamp](https://bootcamp.umn.edu/coding/). I also received excellent tips from the [Material UI team](https://mui.com), and the usual help from Internet bloggers and commenters at places like [Stack Overflow](https://www.stackoverflow.com), the [Mozilla Developer Network](https://developer.mozilla.org) and [W3Schools](https://w3schools.com).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Software License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+©2023, Lee Klusky
 
-## Learn More
+This software is covered by a [MIT License](https://opensource.org/licenses/MIT).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Questions?
+
+Contact me at <a href="mailto:lkbootcamp@yahoo.com">lkbootcamp@yahoo.com</a>, or visit my [GitHub profile](https://www.github.com/lkalliance).
