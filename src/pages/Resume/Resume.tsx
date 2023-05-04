@@ -15,14 +15,6 @@ function Resume() {
   return (
     <section id="resume">
       <Box className="heading">
-        <Button
-          variant="contained"
-          color="primary"
-          href="./images/lee-klusky-resume.pdf"
-          target="_blank"
-        >
-          Download PDF
-        </Button>
         <Typography component="h2">Lee Klusky</Typography>
         <Typography component="p" className="heading">
           Twin Cities, Minnesota, USA
@@ -144,6 +136,14 @@ function Resume() {
         Political Economy (degree incomplete)
       </Typography>
       <Typography component="p">Berkley, CA</Typography>
+      <Button
+        variant="contained"
+        color="primary"
+        href="./images/lee-klusky-resume.pdf"
+        target="_blank"
+      >
+        Download PDF
+      </Button>
     </section>
 
     // <section id="materials">
