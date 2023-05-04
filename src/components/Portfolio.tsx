@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import samples from "../data/projects.json";
 import { ProjectCard } from "../components";
 
 const { projects } = samples;
 
 function Portfolio() {
+  useEffect(() => {
+    document.title = "Lee Klusky: Portfolio";
+  });
+
   return (
     <section id="portfolio">
       {projects.map((project, index) => {

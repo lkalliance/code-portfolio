@@ -21,8 +21,6 @@ function App() {
   const { paragraphs } = aboutMe;
   const isSmall = useMediaQuery({ query: "(max-width: 480px)" });
 
-  console.log(isSmall);
-
   const handleChange = (e: React.SyntheticEvent, newPage: string) => {
     setPage(newPage);
   };

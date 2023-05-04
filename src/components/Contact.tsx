@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { validateEmail } from "../utils";
 import { TextField, Box, Button } from "@mui/material";
 
@@ -9,6 +9,10 @@ function Contact() {
   const [emailAlert, setEmailAlert] = useState(false);
   const [nameAlert, setNameAlert] = useState(false);
   const [messageAlert, setMessageAlert] = useState(false);
+
+  useEffect(() => {
+    document.title = "Lee Klusky: Contact Me";
+  });
 
   const toggleAlert = (
     field: string,
