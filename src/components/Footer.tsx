@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <Stack
         direction="row"
-        spacing={{ xs: 1, sm: 2, md: 4 }}
+        spacing={{ xs: 3, md: 4 }}
         sx={{ justifyContent: "center", marginBottom: "12px" }}
       >
         <Link href="https://github.com/lkalliance" target="_blank">

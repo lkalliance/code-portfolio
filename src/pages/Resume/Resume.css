@@ -32,12 +32,16 @@
   padding-right: 20px;
 }
 
+App.small #resume a.MuiButtonBase-root,
 #resume a.MuiButtonBase-root {
   position: absolute;
   top: 0;
-  right: 0;
-  padding-right: 16px;
+  right: 6px;
   color: white;
+  white-space: nowrap;
+  width: 150px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #resume p {

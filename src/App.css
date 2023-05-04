@@ -87,6 +87,10 @@ footer {
   font-weight: 500;
 }
 
+.App.small footer {
+  font-size: 0.8em;
+}
+
 footer a.MuiTypography-root {
   text-decoration: none;
   color: white;

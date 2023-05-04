@@ -18,7 +18,7 @@ function Resume() {
         <Button
           variant="contained"
           color="primary"
-          href="./lee-klusky-resume.pdf"
+          href="./images/lee-klusky-resume.pdf"
           target="_blank"
         >
           Download PDF
