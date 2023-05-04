@@ -1,5 +1,6 @@
+import "./Contact.css";
 import { useState, useEffect } from "react";
-import { validateEmail } from "../utils";
+import { validateEmail } from "../../utils";
 import { TextField, Box, Button } from "@mui/material";
 
 function Contact() {

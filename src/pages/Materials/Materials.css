@@ -1,0 +1,9 @@
+#materials {
+  text-align: center;
+}
+
+#materials a {
+  width: 250px;
+  display: block;
+  margin: 10px auto;
+}

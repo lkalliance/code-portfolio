@@ -1,3 +1,4 @@
+import "./About.css";
 import { useEffect } from "react";
 
 interface aboutProps {

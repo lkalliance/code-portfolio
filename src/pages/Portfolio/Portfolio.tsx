@@ -1,6 +1,7 @@
+import "./Portfolio.css";
 import { useEffect } from "react";
-import samples from "../data/projects.json";
-import { ProjectCard } from "../components";
+import samples from "../../data/projects.json";
+import { ProjectCard } from "../../components";
 
 const { projects } = samples;
 

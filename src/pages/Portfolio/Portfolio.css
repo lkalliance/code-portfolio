@@ -1,0 +1,56 @@
+#portfolio {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+#portfolio .techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 6px;
+}
+
+#portfolio a.git {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 600;
+}
+
+#portfolio .MuiPaper-root {
+  margin: 0 auto 20px;
+  background-color: var(--primary-light-bg);
+  color: white;
+  width: 320px;
+}
+
+#portfolio .MuiCardHeader-root {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+#portfolio .MuiCardContent-root {
+  padding: 6px 10px 10px;
+}
+
+#portfolio .MuiCardContent-root p {
+  color: white;
+}
+#portfolio .MuiCardContent-root span {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+#portfolio .MuiButtonBase-root {
+  padding-top: 0;
+}
+
+#portfolio .MuiButtonBase-root svg {
+  color: white;
+}
