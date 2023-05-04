@@ -25,6 +25,8 @@ function Resume() {
         <Typography component="p" className="heading">
           <MailIcon />
           <Link href="mailto:lkalliance@icloud.com">lkalliance@icloud.com</Link>
+        </Typography>
+        <Typography component="p" className="heading">
           <LinkIcon />
           <Link href="https://www.linkedin.com/in/lee-klusky" target="_blank">
             https://www.linkedin.com/in/lee-klusky
