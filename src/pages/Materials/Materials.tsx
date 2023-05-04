@@ -1,6 +1,5 @@
-import "./Materials.css";
 import { useEffect } from "react";
-import Button from "@mui/material/Button";
+import { Button, Stack } from "@mui/material";
 
 function Materials() {
   useEffect(() => {
@@ -9,32 +8,36 @@ function Materials() {
 
   return (
     <section id="materials">
-      <h3>Professional Materials:</h3>
-
-      <Button
-        variant="contained"
-        href="./images/lee-klusky-resume.pdf"
-        rel="noreferrer"
-        target="_blank"
+      <Stack
+        direction="column"
+        spacing={2}
+        sx={{ width: "250px", margin: "20px auto" }}
       >
-        Résumê
-      </Button>
-      <Button
-        variant="contained"
-        href="https://github.com/lkalliance"
-        rel="noreferrer"
-        target="_blank"
-      >
-        GitHub
-      </Button>
-      <Button
-        variant="contained"
-        href="https://www.linkedin.com/in/lee-klusky/"
-        rel="noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </Button>
+        <Button
+          variant="contained"
+          href="./images/lee-klusky-resume.pdf"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Résumê
+        </Button>
+        <Button
+          variant="contained"
+          href="https://github.com/lkalliance"
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </Button>
+        <Button
+          variant="contained"
+          href="https://www.linkedin.com/in/lee-klusky/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </Button>
+      </Stack>
     </section>
   );
 }

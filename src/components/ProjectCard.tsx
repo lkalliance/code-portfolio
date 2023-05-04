@@ -10,6 +10,7 @@ import {
   Collapse,
   IconButton,
   Typography,
+  Link,
 } from "@mui/material/";
 import { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -55,7 +56,7 @@ function ProjectCard({
   };
 
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 300 }} raised={true}>
       <CardActionArea component="a" href={url} target="_blank">
         <CardHeader title={title} />
         <CardMedia
@@ -69,9 +70,9 @@ function ProjectCard({
         <Typography variant="body2" color="text.secondary">
           {shortDescription}
           <br />
-          <a href={repo} rel="noreferrer" target="_blank" className="git">
+          <Link href={repo} rel="noreferrer" target="_blank" className="git">
             view code on GitHub
-          </a>
+          </Link>
         </Typography>
       </CardContent>
       <ExpandMore

@@ -1,26 +1,40 @@
 import "./About.css";
 import { useEffect } from "react";
+import { Box } from "@mui/material";
 
 interface aboutProps {
-  title: string;
+  small: boolean;
   paragraphs: string[];
 }
 
-function About({ paragraphs, title }: aboutProps) {
+function About({ paragraphs, small }: aboutProps) {
   useEffect(() => {
     document.title = "Lee Klusky: About Me";
   });
 
   return (
-    <section>
+    <section id="about">
       <img
         src="./images/lee_head_shot.png"
         className="headshot"
         alt="Lee Klusky"
+        width={small ? "65px" : "100px"}
+        height={small ? "65px" : "100px"}
       />
-      {paragraphs.map((graph, index) => (
-        <p key={index}>{graph}</p>
-      ))}
+      <Box>
+        {paragraphs.map((graph, index) => (
+          <Box
+            key={index}
+            sx={
+              small
+                ? { marginBottom: "20px", lineHeight: "1.2em" }
+                : { marginBottom: "20px", lineHeight: "1.6em" }
+            }
+          >
+            {graph}
+          </Box>
+        ))}
+      </Box>
     </section>
   );
 }
