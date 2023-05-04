@@ -2,14 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import { Box, Tabs, Tab } from "@mui/material";
 import { TabContext } from "@mui/lab";
-import {
-  Header,
-  Footer,
-  About,
-  Contact,
-  Portfolio,
-  Materials,
-} from "./components";
+import { Header, Footer } from "./components";
+import { About, Portfolio, Contact, Materials } from "./pages";
 import { getPage } from "./utils";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
