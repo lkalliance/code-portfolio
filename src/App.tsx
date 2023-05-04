@@ -2,7 +2,7 @@ import "./App.css";
 import { Box, Tabs, Tab } from "@mui/material";
 import { TabContext } from "@mui/lab";
 import { Header, Footer } from "./components";
-import { About, Portfolio, Contact, Materials } from "./pages";
+import { About, Portfolio, Contact, Resume } from "./pages";
 import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import aboutMe from "./data/about.json";
@@ -37,6 +37,12 @@ function App() {
                 to="/contact"
                 value="/contact"
               />
+              <Tab
+                label={"Resume"}
+                component={Link}
+                to="/resume"
+                value="/resume"
+              />
             </Tabs>
           </Box>
         </TabContext>
@@ -51,7 +57,7 @@ function App() {
           element={<About paragraphs={paragraphs} small={isSmall} />}
         />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/materials" element={<Materials />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Portfolio />} />
       </Routes>

@@ -16,7 +16,7 @@ body {
   flex-grow: 1;
   position: relative;
   margin: 0;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 
 h1 {
@@ -85,6 +85,10 @@ footer {
   font-size: 1em;
   line-height: 1.2em;
   font-weight: 500;
+}
+
+.App.small footer {
+  font-size: 0.8em;
 }
 
 footer a.MuiTypography-root {

@@ -1,0 +1,66 @@
+#resume {
+  font-size: 0.9em;
+  color: #666666;
+  max-width: 600px;
+  position: relative;
+}
+
+#resume h2,
+#resume h3,
+#resume h4,
+#resume strong {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+#resume h2 {
+  font-size: 2em;
+}
+#resume h3 {
+  font-size: 1.5em;
+  margin-top: 24px;
+}
+#resume h4 {
+  font-size: 1.2em;
+  margin-top: 18px;
+}
+
+#resume a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#resume a.MuiButtonBase-root {
+  color: var(--secondary);
+  white-space: nowrap;
+  margin: 20px auto;
+}
+
+#resume p {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+#resume .heading p {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+#resume li {
+  padding: 0 0 0 8px;
+  margin: 6px 0 6px 16px;
+  border-left: 1px solid var(--secondary);
+}
+
+#resume svg {
+  position: relative;
+  top: 3px;
+  margin-right: 6px;
+}
+
+#resume .heading svg {
+  color: var(--primary);
+  top: 4px;
+}
