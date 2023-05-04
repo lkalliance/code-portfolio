@@ -1,7 +1,7 @@
 import "./Contact.css";
 import { useState, useEffect } from "react";
 import { validateEmail } from "../../utils";
-import { TextField, Box, Button } from "@mui/material";
+import { TextField, Box, Button, Stack } from "@mui/material";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -52,12 +52,12 @@ function Contact() {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          "& .MuiTextField-root": { m: 2 },
         }}
         noValidate
         autoComplete="off"
       >
-        <Box>
+        <Stack sx={{ width: "100%" }}>
           <TextField
             error={nameAlert}
             variant="outlined"
@@ -96,6 +96,7 @@ function Contact() {
           />
           <Button
             variant="contained"
+            sx={{ width: "100px", marginLeft: "14px" }}
             disabled={
               emailAlert ||
               email.length === 0 ||
@@ -106,7 +107,7 @@ function Contact() {
           >
             Send
           </Button>
-        </Box>
+        </Stack>
       </Box>
     </section>
   );
