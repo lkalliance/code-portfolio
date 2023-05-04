@@ -1,5 +1,6 @@
 import "./About.css";
 import { useEffect } from "react";
+import { Box } from "@mui/material";
 
 interface aboutProps {
   title: string;
@@ -18,11 +19,11 @@ function About({ paragraphs, title }: aboutProps) {
         className="headshot"
         alt="Lee Klusky"
       />
-      <div>
+      <Box>
         {paragraphs.map((graph, index) => (
           <p key={index}>{graph}</p>
         ))}
-      </div>
+      </Box>
     </section>
   );
 }

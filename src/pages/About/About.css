@@ -6,7 +6,12 @@ section#about {
 img.headshot {
   border-radius: 50%;
   width: 100px;
+  height: 100px;
   float: left;
-  border: 3px solid var(--secondary);
-  margin: 0 10px 10px 0;
+  border: 3px solid var(--primary);
+  margin: 0 20px 10px 0;
+}
+
+section#about p {
+  margin-top: 0;
 }

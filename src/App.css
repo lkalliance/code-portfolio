@@ -32,7 +32,6 @@ header {
 
 .small h1 {
   font-size: 1.25em;
-  padding-bottom: 0;
   margin-bottom: 0;
 }
 
@@ -54,9 +53,17 @@ section {
   color: var(--primary);
 }
 
+.App.small .MuiTabs-root,
+.App.small .MuiTouchRipple-root {
+  min-height: 36px;
+  height: 36px;
+}
+
 .App.small .MuiBox-root a.MuiButtonBase-root {
   padding: 0;
   font-size: 0.8em;
+  height: 36px;
+  min-height: 38px;
   width: 60px;
 }
 
