@@ -32,7 +32,7 @@
       ],
       "url": "https://you-get-a-tech-blog.herokuapp.com",
       "repo": "https://github.com/lkalliance/you-get-a-tech-blog",
-      "image": "/images/tech-blog-screen-1.png"
+      "image": "./images/tech-blog-screen-1.png"
     },
     {
       "title": "Coding Portfolio",
@@ -48,7 +48,7 @@
       ],
       "url": "https://lee-k-coding-portfolio.herokuapp.com",
       "repo": "https://github.com/lkalliance/code-CV",
-      "image": "/images/code-portfolio-screenshot.png"
+      "image": "./images/code-portfolio-screenshot.png"
     },
     {
       "title": "Moon Fish",
@@ -57,7 +57,7 @@
       "techs": ["HTML", "Javascript", "Milligram"],
       "url": "https://lkalliance.github.io/Moon-Fish/",
       "repo": "https://github.com/lkalliance/Moon-Fish",
-      "image": "/images/moonfish-screen-shot.png"
+      "image": "./images/moonfish-screen-shot.png"
     },
     {
       "title": "Ringnut Jeopardy",
@@ -66,7 +66,7 @@
       "techs": ["HTML", "CSS", "JavaScript"],
       "url": "https://lkalliance.github.io/old-jeopardy/index.htm",
       "repo": "https://github.com/lkalliance/old-jeopardy",
-      "image": "/images/work-1.png"
+      "image": "./images/work-1.png"
     },
     {
       "title": "Dragging Exercise",
@@ -75,7 +75,7 @@
       "techs": ["HTML", "CSS", "JavaScript"],
       "url": "https://lkalliance.github.io/old-dragging/",
       "repo": "https://github.com/lkalliance/old-dragging",
-      "image": "/images/dragging.png"
+      "image": "./images/dragging.png"
     }
   ]
 }
