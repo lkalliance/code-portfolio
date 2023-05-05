@@ -3,6 +3,7 @@ import { Stack, Link } from "@mui/material";
 function Footer() {
   return (
     <footer>
+      {/* list of links in the footer */}
       <Stack
         direction="row"
         spacing={{ xs: 3, md: 4 }}
@@ -20,7 +21,8 @@ function Footer() {
         >
           StackOverflow
         </Link>
-      </Stack>
+      </Stack>{" "}
+      {/* personal tagline, copyright pending */}
       You never finish coding. You just run out of time.
     </footer>
   );

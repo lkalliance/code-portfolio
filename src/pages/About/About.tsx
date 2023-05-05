@@ -9,6 +9,7 @@ interface aboutProps {
 
 function About({ paragraphs, small }: aboutProps) {
   useEffect(() => {
+    // this effect changes the page title
     document.title = "Lee Klusky: About Me";
   });
 
@@ -22,6 +23,7 @@ function About({ paragraphs, small }: aboutProps) {
         height={small ? "65px" : "100px"}
       />
       <Box>
+        {/* iterate over the provided paragraphs and render each in a box */}
         {paragraphs.map((graph, index) => (
           <Box
             key={index}

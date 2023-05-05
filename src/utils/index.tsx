@@ -4,11 +4,4 @@ function validateEmail(email: string) {
   return check.test(String(email).toLowerCase());
 }
 
-function getPage(loc: string) {
-  const pages = ["", "about", "portfolio", "materials", "contact"];
-  const location = loc.split("/");
-  let page = location[location.length - 1];
-  return pages.indexOf(page) > 0 ? page : "portfolio";
-}
-
-export { validateEmail, getPage };
+export { validateEmail };

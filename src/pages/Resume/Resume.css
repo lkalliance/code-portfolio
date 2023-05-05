@@ -1,8 +1,8 @@
 #resume {
-  font-size: 0.9em;
-  color: #666666;
-  max-width: 600px;
   position: relative;
+  max-width: 600px;
+  font-size: 0.9em;
+  color: #555555;
 }
 
 #resume h2,
@@ -17,25 +17,25 @@
   font-size: 2em;
 }
 #resume h3 {
-  font-size: 1.5em;
   margin-top: 24px;
+  font-size: 1.5em;
 }
 #resume h4 {
-  font-size: 1.2em;
   margin-top: 18px;
+  font-size: 1.2em;
 }
 
 #resume a {
+  padding-right: 20px;
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
-  padding-right: 20px;
 }
 
 #resume a.MuiButtonBase-root {
+  margin: 20px auto;
   color: var(--secondary);
   white-space: nowrap;
-  margin: 20px auto;
 }
 
 #resume p {
@@ -44,13 +44,13 @@
 }
 
 #resume .heading p {
-  font-size: 1em;
   margin-top: 0;
+  font-size: 1em;
 }
 
 #resume li {
-  padding: 0 0 0 8px;
   margin: 6px 0 6px 16px;
+  padding: 0 0 0 8px;
   border-left: 1px solid var(--secondary);
 }
 
@@ -61,6 +61,6 @@
 }
 
 #resume .heading svg {
-  color: var(--primary);
   top: 4px;
+  color: var(--primary);
 }

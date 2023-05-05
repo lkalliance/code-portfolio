@@ -7,11 +7,13 @@ const { projects } = samples;
 
 function Portfolio() {
   useEffect(() => {
+    // this effect changes the page title
     document.title = "Lee Klusky: Portfolio";
   });
 
   return (
     <section id="portfolio">
+      {/* iterate over the list of projects and create cards */}
       {projects.map((project, index) => {
         return (
           <ProjectCard

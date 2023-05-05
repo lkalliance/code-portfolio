@@ -9,6 +9,7 @@ import DesignServicesIcon from "@mui/icons-material/DesignServices";
 
 function Resume() {
   useEffect(() => {
+    // this effect changes the page title
     document.title = "Lee Klusky: Résumé";
   });
 
@@ -138,6 +139,7 @@ function Resume() {
         Political Economy (degree incomplete)
       </Typography>
       <Typography component="p">Berkley, CA</Typography>
+      {/* button to link to PDF file in new window */}
       <Button
         variant="contained"
         color="primary"
@@ -147,39 +149,6 @@ function Resume() {
         Download PDF
       </Button>
     </section>
-
-    // <section id="materials">
-    //   <Stack
-    //     direction="column"
-    //     spacing={2}
-    //     sx={{ width: "250px", margin: "20px auto" }}
-    //   >
-    //     <Button
-    //       variant="contained"
-    //       href="./images/lee-klusky-resume.pdf"
-    //       rel="noreferrer"
-    //       target="_blank"
-    //     >
-    //       Résumê
-    //     </Button>
-    //     <Button
-    //       variant="contained"
-    //       href="https://github.com/lkalliance"
-    //       rel="noreferrer"
-    //       target="_blank"
-    //     >
-    //       GitHub
-    //     </Button>
-    //     <Button
-    //       variant="contained"
-    //       href="https://www.linkedin.com/in/lee-klusky/"
-    //       rel="noreferrer"
-    //       target="_blank"
-    //     >
-    //       LinkedIn
-    //     </Button>
-    //   </Stack>
-    // </section>
   );
 }
 

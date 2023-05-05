@@ -1,9 +1,9 @@
 #portfolio {
   display: flex;
-  direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  flex-wrap: wrap;
 }
 
 #portfolio .techs {
@@ -22,15 +22,15 @@
 
 #portfolio .MuiPaper-root {
   margin: 0 auto 20px;
+  width: 320px;
   background-color: var(--primary-light-bg);
   color: white;
-  width: 320px;
 }
 
 #portfolio .MuiCardHeader-root {
+  padding: 10px;
   background-color: var(--primary);
   color: white;
-  padding: 10px;
 }
 
 #portfolio .MuiCardContent-root {
@@ -41,10 +41,10 @@
   color: white;
 }
 #portfolio .MuiCardContent-root span {
+  margin-right: 8px;
   color: var(--primary);
   font-weight: 700;
   font-size: 0.9em;
-  margin-right: 8px;
 }
 
 #portfolio .MuiButtonBase-root {

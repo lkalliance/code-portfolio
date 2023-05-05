@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
   --primary: rgb(37, 54, 136);
   --secondary: rgb(38, 214, 200);
@@ -6,10 +8,12 @@
   --link: rgb(237, 206, 27);
 }
 
+/* Top-level rules */
+
 html {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 body {
@@ -20,23 +24,10 @@ body {
 }
 
 h1 {
-  color: white;
   margin: 0;
   padding: 20px;
   text-align: center;
-}
-
-header {
-  background-color: var(--primary);
-}
-
-.small h1 {
-  font-size: 1.25em;
-  margin-bottom: 0;
-}
-
-.big h1 {
-  font-size: 2em;
+  color: white;
 }
 
 section {
@@ -44,6 +35,23 @@ section {
   padding: 0 20px;
   max-width: 700px;
 }
+
+/* Header rules */
+
+header {
+  background-color: var(--primary);
+}
+
+.small h1 {
+  margin-bottom: 0;
+  font-size: 1.25em;
+}
+
+.big h1 {
+  font-size: 2em;
+}
+
+/* Tab rules */
 
 .MuiTabs-root {
   background-color: var(--secondary);
@@ -55,16 +63,16 @@ section {
 
 .App.small .MuiTabs-root,
 .App.small .MuiTouchRipple-root {
-  min-height: 36px;
   height: 36px;
+  min-height: 36px;
 }
 
 .App.small .MuiBox-root a.MuiButtonBase-root {
   padding: 0;
-  font-size: 0.8em;
+  width: 60px;
   height: 36px;
   min-height: 38px;
-  width: 60px;
+  font-size: 0.8em;
 }
 
 a.MuiButtonBase-root.Mui-selected {
@@ -72,19 +80,21 @@ a.MuiButtonBase-root.Mui-selected {
   color: black;
 }
 
+/* Footer rules */
+
 footer {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
-  width: 100%;
   padding: 15px;
+  width: 100%;
   text-align: center;
   background-color: var(--primary);
   color: var(--secondary);
-  letter-spacing: 0.2rem;
   font-size: 1em;
   line-height: 1.2em;
   font-weight: 500;
+  letter-spacing: 0.2rem;
 }
 
 .App.small footer {

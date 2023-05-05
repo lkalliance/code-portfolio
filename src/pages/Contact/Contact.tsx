@@ -12,6 +12,7 @@ function Contact() {
   const [messageAlert, setMessageAlert] = useState(false);
 
   useEffect(() => {
+    // this effect changes the page title
     document.title = "Lee Klusky: Contact Me";
   });
 
@@ -20,6 +21,8 @@ function Contact() {
     value: string,
     callback: (val: boolean) => void
   ) => {
+    // this function takes in a field, a value and a callback,
+    // and sets the alert state to true for that field if needed
     const doSet =
       (field === "email" && (value.length === 0 || !validateEmail(value))) ||
       value.length === 0;
@@ -27,6 +30,7 @@ function Contact() {
   };
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // this function updates the state values
     const { id, value } = e.target;
     return id === "name"
       ? setName(value)
@@ -36,6 +40,7 @@ function Contact() {
   };
 
   const handleFormSubmit = (e: React.MouseEvent) => {
+    // this function traps for validation, or alerts the output.
     e.preventDefault();
     const alertText =
       emailAlert ||
