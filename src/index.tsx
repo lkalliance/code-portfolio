@@ -9,6 +9,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* need to promote the Router to here to keep route-referencing functions
+    in App.js in scope */}
     <Router>
       <App />
     </Router>

@@ -20,16 +20,16 @@ function App() {
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs aria-label="Portfolio navigation" value={pathname} centered>
               <Tab
-                label="Portfolio"
-                component={Link}
-                to="/portfolio"
-                value="/portfolio"
-              />
-              <Tab
                 label={isSmall ? "About" : "About Me"}
                 component={Link}
                 to="/about"
                 value="/about"
+              />
+              <Tab
+                label="Portfolio"
+                component={Link}
+                to="/portfolio"
+                value="/portfolio"
               />
               <Tab
                 label={isSmall ? "Contact" : "Contact Me"}
@@ -38,7 +38,7 @@ function App() {
                 value="/contact"
               />
               <Tab
-                label={"Resume"}
+                label={"Résumé"}
                 component={Link}
                 to="/resume"
                 value="/resume"
@@ -49,8 +49,12 @@ function App() {
       </header>
       <Footer />
       <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route index element={<Navigate to="/portfolio" />} />
+        {/* defaulting to the "About" tab */}
+        <Route
+          path="/"
+          element={<About paragraphs={paragraphs} small={isSmall} />}
+        />
+        <Route index element={<Navigate to="/about" />} />
 
         <Route
           path="/about"
@@ -59,7 +63,10 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Portfolio />} />
+        <Route
+          path="*"
+          element={<About paragraphs={paragraphs} small={isSmall} />}
+        />
       </Routes>
     </div>
   );

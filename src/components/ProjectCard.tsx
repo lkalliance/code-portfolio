@@ -57,6 +57,7 @@ function ProjectCard({
 
   return (
     <Card sx={{ maxWidth: 300 }} raised={true}>
+      {/* clickable area contains screenshot and title */}
       <CardActionArea component="a" href={url} target="_blank">
         <CardHeader title={title} />
         <CardMedia
@@ -66,6 +67,8 @@ function ProjectCard({
           alt={shortDescription}
         />
       </CardActionArea>
+
+      {/* visible area with one-line description and link to repo */}
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {shortDescription}
@@ -75,6 +78,8 @@ function ProjectCard({
           </Link>
         </Typography>
       </CardContent>
+
+      {/* expanding area with long description and list of technologies */}
       <ExpandMore
         expand={expanded}
         onClick={handleExpandClick}
