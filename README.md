@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a useful web page for potential employers to see me and to get a feel for my skills and my personality. I wanted to provide some text in my own words, some samples of my work, and all the information and links they'll need to reach out to me. I hope this page will inspire them to do that. You can view the code portfolio [here](https://lkalliance.github.io/code-portfolio/#/about).
+This is a useful web page for potential employers to see me and to get a feel for my skills and my personality. I wanted to provide some text in my own words, some samples of my work, and all the information and links they'll need to reach out to me. I hope this page will inspire them to do that. You can view the code portfolio [here](https://lkalliance.github.io/code-portfolio).
 
 The preceding paragraph is from the README on my [original code portfolio](https://lkalliance.github.io/module-2-challenge/), published mere months ago. The sentiment is still valid, but my technological tools have certainly gotten more advanced.
 
