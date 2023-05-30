@@ -1,12 +1,14 @@
 import "./Contact.css";
 import { useState, useEffect } from "react";
 import { validateEmail } from "../../utils";
-import { TextField, Box, Button, Stack } from "@mui/material";
+import { TextField, Box, Button, Stack, Alert } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [sendResponse, setSendResponse] = useState("");
   const [emailAlert, setEmailAlert] = useState(false);
   const [nameAlert, setNameAlert] = useState(false);
   const [messageAlert, setMessageAlert] = useState(false);
@@ -15,6 +17,29 @@ function Contact() {
     // this effect changes the page title
     document.title = "Lee Klusky: Contact Me";
   });
+
+  const sendEmail = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    const emailResponse = await emailjs.send(
+      `${process.env.REACT_APP_SERVICE_ID}`,
+      `${process.env.REACT_APP_TEMPLATE_ID}`,
+      { name, email, message },
+      `${process.env.REACT_APP_PUBLIC}`
+    );
+
+    setSendResponse(
+      emailResponse.status === 200 ? "Message sent" : "Send failed"
+    );
+
+    // .then(
+    //   function (response) {
+    //     console.log("SUCCESS!", response.status, response.text);
+    //   },
+    //   function (error) {
+    //     console.log("FAILED...", error);
+    //   }
+    // );
+  };
 
   const toggleAlert = (
     field: string,
@@ -108,10 +133,17 @@ function Contact() {
               name.length === 0 ||
               message.length === 0
             }
-            onClick={handleFormSubmit}
+            onClick={sendEmail}
           >
             Send
           </Button>
+          {sendResponse === "Message sent" ? (
+            <Alert severity="success">Message sent</Alert>
+          ) : sendResponse === "Send failed" ? (
+            <Alert severity="error">Send failed</Alert>
+          ) : (
+            <div></div>
+          )}
         </Stack>
       </Box>
     </section>

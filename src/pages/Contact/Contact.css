@@ -1,3 +1,12 @@
 section#contact {
   max-width: 500px;
 }
+
+section#contact form {
+  position: relative;
+}
+
+section#contact div.MuiAlert-root {
+  margin: 14px;
+  width: 200px;
+}
