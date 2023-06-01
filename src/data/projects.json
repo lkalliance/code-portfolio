@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "title": "Shelf Life",
+      "description": "Shelf Life was a project I worked on with a team of coders for our final project at the University of Minnesota Full Stack Coding Boot Camp. It included a login, a function to look up and add books to your reading diary, and an interface where the user can arrange the books on a digital bookshelf any way they see fit. It's meant not only as a reading log but as a creative outlet.",
+      "shortDescription": "Your digital bookcase",
+      "techs": ["React", "Recoil", "Node.js", "Express", "MongoDb", "graphQL"],
+      "url": "https://shelf-life.herokuapp.com",
+      "repo": "https://github.com/lkalliance/shelf-life",
+      "image": "./images/shelf-life-screenshot.png"
+    },
+    {
       "title": "Be For Reel",
       "description": "Be For Reel was a project I worked on as the leader of a five-person team in the University of Minnesota Full Stack Coding Boot Camp. It included a username/password login, poll creation tools tied into IMDb's public API, and polls enriched with IMDb data. Users could submit a comment with their vote. The front page displayed six randomly-chosen polls, with the movie poster of one of its randomly-chosen options. Users each had a profile page, which showed all their created quizzes and all their submitted comments.",
       "shortDescription": "A movie poll site powered by IMDb",
