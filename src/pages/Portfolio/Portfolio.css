@@ -60,7 +60,7 @@
 }
 
 #portfolio .banner {
-  height: 2px;
+  height: 250px;
 }
 
 @media screen and (max-width: 360px) {
