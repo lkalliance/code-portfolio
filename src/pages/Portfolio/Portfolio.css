@@ -22,7 +22,7 @@
 
 #portfolio .MuiPaper-root {
   margin: 0 auto 20px;
-  min-width: 320px;
+  min-width: 280px;
   max-width: 600px;
   width: 85%;
   background-color: var(--primary-light-bg);
@@ -33,10 +33,12 @@
   padding: 10px;
   background-color: var(--primary);
   color: white;
+  border-bottom: 1px solid white;
 }
 
 #portfolio .MuiCardContent-root {
   padding: 6px 10px 10px;
+  border-top: 1px solid white;
 }
 
 #portfolio .MuiCardContent-root p {
@@ -58,5 +60,20 @@
 }
 
 #portfolio .banner {
-  height: 200px;
+  height: 250px;
+}
+
+@media screen and (max-width: 360px) {
+  #portfolio .MuiPaper-root {
+    margin: 0 auto 20px;
+    min-width: 280px;
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--primary-light-bg);
+    color: white;
+  }
+
+  section {
+    padding: 0 10px;
+  }
 }
