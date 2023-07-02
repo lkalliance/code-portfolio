@@ -1,6 +1,6 @@
 #portfolio {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
@@ -22,7 +22,9 @@
 
 #portfolio .MuiPaper-root {
   margin: 0 auto 20px;
-  width: 320px;
+  min-width: 320px;
+  max-width: 600px;
+  width: 85%;
   background-color: var(--primary-light-bg);
   color: white;
 }
@@ -53,4 +55,8 @@
 
 #portfolio .MuiButtonBase-root svg {
   color: white;
+}
+
+#portfolio .banner {
+  height: 200px;
 }

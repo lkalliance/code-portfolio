@@ -12,6 +12,7 @@ import {
   Typography,
   Link,
 } from "@mui/material/";
+import { ParallaxBanner } from "react-scroll-parallax";
 import { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -60,12 +61,21 @@ function ProjectCard({
       {/* clickable area contains screenshot and title */}
       <CardActionArea component="a" href={url} target="_blank">
         <CardHeader title={title} />
-        <CardMedia
+        <ParallaxBanner
+          className="banner"
+          layers={[
+            {
+              image: image,
+              speed: -5,
+            },
+          ]}
+        />
+        {/* <CardMedia
           component="img"
           height="150"
           image={image}
           alt={shortDescription}
-        />
+        /> */}
       </CardActionArea>
 
       {/* visible area with one-line description and link to repo */}
