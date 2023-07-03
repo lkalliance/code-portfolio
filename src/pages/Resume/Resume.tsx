@@ -35,9 +35,10 @@ function Resume() {
         </Typography>
       </Box>
       <Typography component="p">
-        Technology-oriented customer relationship manager with 15+ years of
-        experience in product development, product testing, product
-        demonstration, and client training and support
+        Full Stack web developer and customer relationship manager trained in
+        Front End coding at Yahoo, with several years of experience in product
+        development, product testing, product demonstration, and client training
+        and support for medical device companies
       </Typography>
 
       <Typography component="h3">
