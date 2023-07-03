@@ -16,6 +16,9 @@ function App() {
   return (
     <ParallaxProvider>
       <div className={isSmall ? "App small" : "App big"}>
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
         <header>
           <Header title="Lee Klusky Coding Portfolio" />
           <TabContext value={pathname}>
