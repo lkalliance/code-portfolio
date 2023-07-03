@@ -60,13 +60,17 @@ function ProjectCard({
     <Card sx={{ maxWidth: 300 }} raised={true}>
       {/* clickable area contains screenshot and title */}
       <CardActionArea component="a" href={url} target="_blank">
-        <CardHeader title={title} />
+        {/* <CardHeader title={title} /> */}
         <ParallaxBanner
           className="banner"
           layers={[
             {
               image: image,
               speed: -5,
+            },
+            {
+              children: <h1>{title}</h1>,
+              speed: -8,
             },
           ]}
         />
