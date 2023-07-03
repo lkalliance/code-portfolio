@@ -1,7 +1,8 @@
 import "./Portfolio.css";
 import { useEffect } from "react";
 import samples from "../../data/projects.json";
-import { ProjectCard } from "../../components";
+import { ProjectCard, PageTitle } from "../../components";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const { projects } = samples;
 
@@ -13,6 +14,7 @@ function Portfolio() {
 
   return (
     <section id="portfolio">
+      {/* <PageTitle image="./images/code-background.jpg" title="Code Samples" /> */}
       {/* iterate over the list of projects and create cards */}
       {projects.map((project, index) => {
         return (

@@ -57,61 +57,53 @@ function ProjectCard({
   };
 
   return (
-    <Card sx={{ maxWidth: 300 }} raised={true}>
-      {/* clickable area contains screenshot and title */}
-      <CardActionArea component="a" href={url} target="_blank">
-        {/* <CardHeader title={title} /> */}
-        <ParallaxBanner
-          className="banner"
-          layers={[
-            {
-              image: image,
-              speed: -5,
-            },
-            {
-              children: <h1>{title}</h1>,
-              speed: -15,
-            },
-          ]}
-        />
-        {/* <CardMedia
-          component="img"
-          height="150"
-          image={image}
-          alt={shortDescription}
-        /> */}
-      </CardActionArea>
+    <>
+      <Card sx={{ maxWidth: 300 }} raised={true}>
+        <CardHeader title={title} />
+        {/* clickable area contains screenshot and title */}
+        <CardActionArea component="a" href={url} target="_blank">
+          {/* <CardHeader title={title} /> */}
+          <ParallaxBanner
+            className="banner"
+            layers={[
+              {
+                image: image,
+                speed: -8,
+              },
+            ]}
+          />
+        </CardActionArea>
 
-      {/* visible area with one-line description and link to repo */}
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {shortDescription}
-          <br />
-          <Link href={repo} rel="noreferrer" target="_blank" className="git">
-            view code on GitHub
-          </Link>
-        </Typography>
-      </CardContent>
-
-      {/* expanding area with long description and list of technologies */}
-      <ExpandMore
-        expand={expanded}
-        onClick={handleExpandClick}
-        aria-expanded={expanded}
-        aria-label="show more"
-      >
-        <ExpandMoreIcon />
-      </ExpandMore>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        {/* visible area with one-line description and link to repo */}
         <CardContent>
-          <TechList techs={techs} repo={repo} />
-
           <Typography variant="body2" color="text.secondary">
-            {description}
+            {shortDescription}
+            <br />
+            <Link href={repo} rel="noreferrer" target="_blank" className="git">
+              view code on GitHub
+            </Link>
           </Typography>
         </CardContent>
-      </Collapse>
-    </Card>
+
+        {/*expanding area with long description and list of technologies */}
+        <ExpandMore
+          expand={expanded}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        >
+          <ExpandMoreIcon />
+        </ExpandMore>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <TechList techs={techs} repo={repo} />
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+          </CardContent>
+        </Collapse>
+      </Card>
+    </>
   );
 }
 

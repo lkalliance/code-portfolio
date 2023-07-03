@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
+  padding-bottom: 80px;
+}
+
+#portfolio .description {
+  min-width: 280px;
+  max-width: 600px;
+  width: 85%;
+  margin: 50px auto 20px;
+}
+
+#portfolio .description:first-of-type {
+  margin-top: 10px;
 }
 
 #portfolio .techs {
@@ -60,13 +72,13 @@
 }
 
 #portfolio .banner {
-  height: 300px;
+  height: 200px;
 }
 
 #portfolio .banner h1 {
-  margin: 150px 30px;
+  margin: 120px 30px;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2.5em;
   text-shadow: 0 0 8px black;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 10px;
@@ -74,7 +86,7 @@
   color: black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   #portfolio .MuiPaper-root {
     margin: 0 auto 20px;
     min-width: 280px;
@@ -84,7 +96,15 @@
     color: white;
   }
 
+  #portfolio .description {
+    width: 100%;
+  }
+
   section {
     padding: 0 10px;
+  }
+
+  #portfolio .banner h1 {
+    margin-top: 200px;
   }
 }
