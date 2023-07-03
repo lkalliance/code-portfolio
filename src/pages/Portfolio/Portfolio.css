@@ -4,18 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  padding-bottom: 80px;
-}
-
-#portfolio .description {
-  min-width: 280px;
-  max-width: 600px;
-  width: 85%;
-  margin: 50px auto 20px;
-}
-
-#portfolio .description:first-of-type {
-  margin-top: 10px;
 }
 
 #portfolio .techs {
@@ -72,11 +60,19 @@
 }
 
 #portfolio .banner {
-  height: 200px;
+  height: 300px;
+}
+
+#portfolio .projectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 #portfolio .banner h1 {
-  margin: 120px 30px;
+  margin: 0 30px;
   font-weight: 100;
   font-size: 2.5em;
   text-shadow: 0 0 8px black;
@@ -98,13 +94,5 @@
 
   #portfolio .description {
     width: 100%;
-  }
-
-  section {
-    padding: 0 10px;
-  }
-
-  #portfolio .banner h1 {
-    margin-top: 200px;
   }
 }

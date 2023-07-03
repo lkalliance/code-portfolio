@@ -59,7 +59,6 @@ function ProjectCard({
   return (
     <>
       <Card sx={{ maxWidth: 300 }} raised={true}>
-        <CardHeader title={title} />
         {/* clickable area contains screenshot and title */}
         <CardActionArea component="a" href={url} target="_blank">
           {/* <CardHeader title={title} /> */}
@@ -71,7 +70,11 @@ function ProjectCard({
                 speed: -8,
               },
             ]}
-          />
+          >
+            <div className="projectTitle">
+              <h1>{title}</h1>
+            </div>
+          </ParallaxBanner>
         </CardActionArea>
 
         {/* visible area with one-line description and link to repo */}
