@@ -58,9 +58,24 @@
   position: relative;
   top: 3px;
   margin-right: 6px;
+  color: var(--secondary);
 }
 
 #resume .heading svg {
   top: 4px;
-  color: var(--primary);
+  color: var(--secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+  #resume {
+    color: var(--dark-text);
+  }
+
+  #resume h2,
+  #resume h3,
+  #resume h4,
+  #resume strong,
+  #resume a {
+    color: white;
+  }
 }

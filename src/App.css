@@ -6,6 +6,9 @@
   --secondary-highlight: rgb(29, 183, 170);
   --primary-light-bg: rgb(78, 112, 171);
   --link: rgb(237, 206, 27);
+  --dark-bg: rgb(58, 90, 144);
+  --dark-secondary: rgb(24, 151, 140);
+  --dark-text: rgb(193, 210, 243);
 }
 
 /* Top-level rules */
@@ -127,5 +130,20 @@ footer a.MuiTypography-root:hover {
 
   footer .MuiStack-root a.MuiTypography-root {
     margin: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+
+  .MuiTabs-root {
+    background-color: var(--dark-secondary);
+  }
+
+  h1 {
+    color: white;
   }
 }
