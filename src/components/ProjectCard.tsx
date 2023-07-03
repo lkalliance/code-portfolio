@@ -70,7 +70,7 @@ function ProjectCard({
             },
             {
               children: <h1>{title}</h1>,
-              speed: -8,
+              speed: -15,
             },
           ]}
         />
