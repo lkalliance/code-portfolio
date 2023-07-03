@@ -2,7 +2,7 @@
   position: relative;
   max-width: 600px;
   font-size: 0.9em;
-  color: #555555;
+  color: var(--primary);
 }
 
 #resume h2,
@@ -51,31 +51,24 @@
 #resume li {
   margin: 6px 0 6px 16px;
   padding: 0 0 0 8px;
-  border-left: 1px solid var(--secondary);
+  border-left: 3px solid var(--secondary);
 }
 
 #resume svg {
   position: relative;
   top: 3px;
   margin-right: 6px;
-  color: var(--secondary);
 }
 
 #resume .heading svg {
   top: 4px;
-  color: var(--secondary);
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (max-width: 375px) {
   #resume {
-    color: var(--dark-text);
+    padding: 15px;
   }
-
-  #resume h2,
-  #resume h3,
-  #resume h4,
-  #resume strong,
-  #resume a {
-    color: white;
+  #resume p {
+    margin-left: 0;
   }
 }

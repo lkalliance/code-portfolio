@@ -10,28 +10,3 @@ section#contact div.MuiAlert-root {
   margin: 14px;
   width: 200px;
 }
-
-@media (prefers-color-scheme: dark) {
-  section#contact input,
-  section#contact input:autofill,
-  section#contact textarea {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-  }
-
-  label.MuiFormLabel-root {
-    color: var;
-  }
-
-  div.MuiInputBase-root {
-    border-color: white;
-  }
-
-  section#contact .Mui-error {
-    color: rgb(241, 133, 133);
-  }
-
-  section#contact .Mui-focused {
-    color: white;
-  }
-}

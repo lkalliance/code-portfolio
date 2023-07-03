@@ -12,7 +12,16 @@ img.headshot {
   height: 100px;
 }
 
+img.badge {
+  margin: 10px 20px 10px 0;
+  width: 106px;
+}
+
 .App.small img.headshot {
   width: 65px;
   height: 65px;
+}
+
+.App.small img.badge {
+  width: 71px;
 }
