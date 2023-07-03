@@ -70,9 +70,10 @@ header {
 .App.small .MuiBox-root a.MuiButtonBase-root {
   padding: 0;
   width: 60px;
+  min-width: 80px;
   height: 36px;
   min-height: 38px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 a.MuiButtonBase-root.Mui-selected {
@@ -101,6 +102,10 @@ footer {
   font-size: 0.8em;
 }
 
+footer .MuiStack-root {
+  justify-content: space-around;
+}
+
 footer a.MuiTypography-root {
   text-decoration: none;
   color: white;
@@ -109,4 +114,18 @@ footer a.MuiTypography-root {
 
 footer a.MuiTypography-root:hover {
   color: var(--secondary);
+}
+
+@media screen and (max-width: 360px) {
+  footer {
+    padding: 15px 5px;
+  }
+
+  footer .MuiStack-root {
+    justify-content: space-around;
+  }
+
+  footer .MuiStack-root a.MuiTypography-root {
+    margin: 0;
+  }
 }
