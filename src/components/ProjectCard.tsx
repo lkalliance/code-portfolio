@@ -67,7 +67,7 @@ function ProjectCard({
             layers={[
               {
                 image: image,
-                speed: -6,
+                speed: -4,
               },
             ]}
           >
