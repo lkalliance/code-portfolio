@@ -1,8 +1,7 @@
 import "./Portfolio.css";
 import { useEffect } from "react";
 import samples from "../../data/projects.json";
-import { ProjectCard, PageTitle } from "../../components";
-import { ParallaxBanner } from "react-scroll-parallax";
+import { ProjectCard } from "../../components";
 
 const { projects } = samples;
 

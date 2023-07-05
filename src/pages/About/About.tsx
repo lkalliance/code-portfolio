@@ -4,10 +4,9 @@ import { Box } from "@mui/material";
 
 interface aboutProps {
   small: boolean;
-  paragraphs: string[];
 }
 
-function About({ paragraphs, small }: aboutProps) {
+function About({ small }: aboutProps) {
   useEffect(() => {
     // this effect changes the page title
     document.title = "Lee Klusky: About Me";
@@ -27,23 +26,53 @@ function About({ paragraphs, small }: aboutProps) {
           <img
             src="./images/full-stack-web-development-certificate-coding-boot-camp.png"
             className="badge"
+            alt="Credly full stack web development badge"
           />
         </a>
       </div>
       <Box>
-        {/* iterate over the provided paragraphs and render each in a box */}
-        {paragraphs.map((graph, index) => (
-          <Box
-            key={index}
-            sx={
-              small
-                ? { marginBottom: "20px", lineHeight: "1.2em" }
-                : { marginBottom: "20px", lineHeight: "1.6em" }
-            }
-          >
-            {graph}
-          </Box>
-        ))}
+        <Box
+          key="0"
+          sx={
+            small
+              ? { marginBottom: "20px", lineHeight: "1.2em" }
+              : { marginBottom: "20px", lineHeight: "1.6em" }
+          }
+        >
+          I've worn many hats. I've been in desktop publishing, athletics
+          publicity, software training and support, writing, and most especially
+          front end web coding in which I was trained at Yahoo! Sports. I've
+          worked for educational institutions, for startups, for small companies
+          and for major corporations. It's time for a new hat.
+        </Box>
+
+        <Box
+          key="1"
+          sx={
+            small
+              ? { marginBottom: "20px", lineHeight: "1.2em" }
+              : { marginBottom: "20px", lineHeight: "1.6em" }
+          }
+        >
+          As a graduate of the University of Minnesota Full Stack Coding
+          Bootcamp, I have experience in all the areas I've mentioned above, in
+          addition to the latest in Javascript, CSS, HTML, jQuery, Node.js, SQL,
+          MongoDB and React.
+        </Box>
+        <h3>About this Portfolio</h3>
+        <Box
+          key="2"
+          sx={
+            small
+              ? { marginBottom: "20px", lineHeight: "1.2em" }
+              : { marginBottom: "20px", lineHeight: "1.6em" }
+          }
+        >
+          I coded this portfolio in React.js. I used Material UI and React
+          Router DOM as supplemental technologies. I created the parallax effect
+          on the portfolio page using React Scroll Paraallax. I coded the
+          backgroud animation using CSS animations.
+        </Box>
       </Box>
     </section>
   );

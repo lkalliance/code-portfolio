@@ -55,23 +55,14 @@ function App() {
         <Footer />
         <Routes>
           {/* defaulting to the "About" tab */}
-          <Route
-            path="/"
-            element={<About paragraphs={paragraphs} small={isSmall} />}
-          />
+          <Route path="/" element={<About small={isSmall} />} />
           <Route index element={<Navigate to="/about" />} />
 
-          <Route
-            path="/about"
-            element={<About paragraphs={paragraphs} small={isSmall} />}
-          />
+          <Route path="/about" element={<About small={isSmall} />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="*"
-            element={<About paragraphs={paragraphs} small={isSmall} />}
-          />
+          <Route path="*" element={<About small={isSmall} />} />
         </Routes>
       </div>
     </ParallaxProvider>
