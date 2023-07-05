@@ -3,8 +3,6 @@ import { TechList } from "../components";
 import { styled } from "@mui/material/styles";
 import {
   Card,
-  CardHeader,
-  CardMedia,
   CardContent,
   CardActionArea,
   Collapse,

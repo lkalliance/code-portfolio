@@ -130,8 +130,8 @@ function Resume() {
       </Typography>
       <Typography component="h4">Full Stack Coding Bootcamp</Typography>
       <Typography component="p">
-        Currently earning a certificate from the University of Minnesota in full
-        stack software development, covering both front end
+        Earned a certificate from the University of Minnesota in full stack
+        software development, covering both front end
         (HTML/CSS/JavaScript/React) and back end (Node.js, Express, MySQL,
         MongoDB)
       </Typography>
