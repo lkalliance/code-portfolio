@@ -22,11 +22,26 @@ function About({ small }: aboutProps) {
           width={small ? "65px" : "100px"}
           height={small ? "65px" : "100px"}
         />
-        <a href="https://www.credly.com/badges/60c743d7-bae3-47c5-bb7f-9c80a40ec7c0/public_url">
+        <a
+          href="https://www.credly.com/badges/60c743d7-bae3-47c5-bb7f-9c80a40ec7c0/public_url"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src="./images/full-stack-web-development-certificate-coding-boot-camp.png"
             className="badge"
             alt="Credly full stack web development badge"
+          />
+        </a>
+        <a
+          href="https://bcert.me/bc/html/show-badge.html?b=smvcklwt"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="./images/seal-csm.png"
+            className="badge"
+            alt="Scrum Alliance ScrumMaster Certificate"
           />
         </a>
       </div>
