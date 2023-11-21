@@ -11,18 +11,17 @@
     },
     {
       "title": "Be For Reel",
-      "description": "Be For Reel was a project I worked on as the leader of a five-person team in the University of Minnesota Full Stack Coding Boot Camp. It included a username/password login, poll creation tools tied into IMDb's public API, and polls enriched with IMDb data. Users could submit a comment with their vote. The front page displayed six randomly-chosen polls, with the movie poster of one of its randomly-chosen options. Users each had a profile page, which showed all their created quizzes and all their submitted comments.",
+      "description": "Be For Reel was a project I worked on as the leader of a five-person team in the University of Minnesota Full Stack Coding Boot Camp. It included a username/password login, poll creation tools tied into IMDb's public API, and polls enriched with IMDb data. Users could submit a comment with their vote. The front page displayed six randomly-chosen polls, with the movie poster of one of its randomly-chosen options. Users each had a profile page, which showed all their created quizzes and all their submitted comments. The current version is completely rewritten in React.js, with a MongoDB and GraphQL back end.",
       "shortDescription": "A movie poll site powered by IMDb",
       "techs": [
+        "React.js",
         "Node.js",
         "Express",
-        "MySQL",
-        "Sequelize",
-        "Handlebars",
-        "jQuery",
+        "MongoDB",
+        "Mongoose",
         "Bootstrap"
       ],
-      "url": "https://be-for-reel.herokuapp.com",
+      "url": "https://be-4-reel-9f2cbf237830.herokuapp.com",
       "repo": "https://github.com/lkalliance/Be-For-Reel",
       "image": "./images/be-for-reel-3.png"
     },
