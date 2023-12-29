@@ -34,6 +34,17 @@ function About({ small }: aboutProps) {
           />
         </a>
         <a
+          href="https://www.credly.com/badges/d0db0faf-a143-459f-9268-147c55ad36ab/public_url"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="./images/pcep-30-02-pcep-certified-entry-level-python-programmer.png"
+            className="badge"
+            alt="Credly full stack web development badge"
+          />
+        </a>
+        <a
           href="https://bcert.me/bc/html/show-badge.html?b=smvcklwt"
           target="_blank"
           rel="noreferrer"
