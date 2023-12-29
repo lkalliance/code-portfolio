@@ -135,16 +135,23 @@ function Resume() {
         (HTML/CSS/JavaScript/React) and back end (Node.js, Express, MySQL,
         MongoDB)
       </Typography>
+      <Typography component="h4">PCEP Certification</Typography>
+      <Typography component="p">
+        Earned certificates from the Pyton Institute in entry-level Python
+        programming
+      </Typography>
       <Typography component="h4">ScrumMaster Certification</Typography>
       <Typography component="p">
-        Earned certificates from the Universith of Minnesota and the Scrum
-        Alliance in ScrumMaster meethodologies
+        Earned certificates from the University of Minnesota and the Scrum
+        Alliance in ScrumMaster methodologies
       </Typography>
       <Typography component="h4">University of California</Typography>
       <Typography component="p">
         Political Economy (degree incomplete)
       </Typography>
-      <Typography component="p">Berkley, CA</Typography>
+      <Typography component="p" className="cal">
+        Berkley, CA
+      </Typography>
       {/* button to link to PDF file in new window */}
       <Button
         variant="contained"

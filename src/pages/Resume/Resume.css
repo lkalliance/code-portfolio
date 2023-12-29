@@ -64,6 +64,10 @@
   top: 4px;
 }
 
+#resume p.cal {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 375px) {
   #resume {
     padding: 15px;
