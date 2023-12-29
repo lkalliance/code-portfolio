@@ -138,12 +138,12 @@ function Resume() {
       </Typography>
       <Typography component="h4">PCEP Certification</Typography>
       <Typography component="p">
-        Earned certificates from the Pyton Institute in entry-level Python
+        Earned a certificate from the Pyton Institute in entry-level Python
         programming
       </Typography>
       <Typography component="h4">ScrumMaster Certification</Typography>
       <Typography component="p">
-        Earned certificates from the University of Minnesota and the Scrum
+        Earned a certificate from the University of Minnesota and the Scrum
         Alliance in ScrumMaster methodologies
       </Typography>
       <Typography component="h4">University of California</Typography>
