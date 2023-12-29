@@ -113,6 +113,7 @@ function Resume() {
       </Typography>
       <List>
         <ListItem>Expert in HTML, CSS and JavaScript</ListItem>
+        <ListItem>Basic experience in Python</ListItem>
         <ListItem>
           Familiar with Node, Express, React, MySQL, MongoDB, jQuery, Bootstrap
         </ListItem>
