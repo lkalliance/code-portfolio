@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Shelf Life",
-      "description": "Shelf Life was a project I worked on with a team of coders for our final project at the University of Minnesota Full Stack Coding Boot Camp. It included a login, a function to look up and add books to your reading diary, and an interface where the user can arrange the books on a digital bookshelf any way they see fit. It's meant not only as a reading log but as a creative outlet.",
+      "description": "Shelf Life is a project I worked on with a team of coders for our final project at the University of Minnesota Full Stack Coding Boot Camp. It included a login, a function to look up and add books to your reading diary, and an interface where the user can arrange the books on a digital bookshelf any way they see fit. It's meant not only as a reading log but as a creative outlet. Since the end of the boot camp, I have added features to the software on the creative side: a book studio to give more control over how books look on the shelf, a flag for audiobooks, and some presentation niceties.",
       "shortDescription": "Your digital bookcase",
       "techs": ["React", "Recoil", "Node.js", "Express", "MongoDb", "graphQL"],
       "url": "https://shelf-life.herokuapp.com",
@@ -11,7 +11,7 @@
     },
     {
       "title": "Be For Reel",
-      "description": "Be For Reel was a project I worked on as the leader of a five-person team in the University of Minnesota Full Stack Coding Boot Camp. It included a username/password login, poll creation tools tied into IMDb's public API, and polls enriched with IMDb data. Users could submit a comment with their vote. The front page displayed six randomly-chosen polls, with the movie poster of one of its randomly-chosen options. Users each had a profile page, which showed all their created quizzes and all their submitted comments. The current version is completely rewritten in React.js, with a MongoDB and GraphQL back end.",
+      "description": "Be For Reel was a project I worked on as the leader of a five-person team in the University of Minnesota Full Stack Coding Boot Camp. It originally utilized Handlebars templating and a MySQL database. Following the boot camp, I rebuilt Be for Reel from the ground up, using a full MERN stack and a GraphQL database interface. It includes a username/password login with email confirmation, poll creation tools tied into IMDb's public API and ChatGPT, polls enriched with IMDb data, a list of most-voted-on films, and a search tool to find polls, users, and movies. Users can submit a comment with their vote. The front page displays six randomly-chosen polls, with the movie poster of one of its randomly-chosen options. Users have a profile page, which shows all their created quizzes and all their submitted comments.",
       "shortDescription": "A movie poll site powered by IMDb",
       "techs": [
         "React.js",
